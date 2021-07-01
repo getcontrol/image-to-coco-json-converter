@@ -1,0 +1,9 @@
+Convert JPG > PNG mogrify -format png *.jpg
+rm -r *.jpg
+Convert PNG > JPG mogrify -format jpg *.png
+rm -r *.png
+
+
+pip freeze > requirements.txt
+
+https://gis.stackexchange.com/questions/180142/converting-shapely-multipolygon-to-polygon-technique-doesnt-always-work

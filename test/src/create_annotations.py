@@ -46,7 +46,7 @@ def create_sub_mask_annotation(sub_mask):
         # Make a polygon and simplify it
         poly = Polygon(contour)
         poly = poly.simplify(1.0, preserve_topology=False)
-
+        
         if(poly.is_empty):
             # Go to next iteration, dont save empty values in list
             continue
@@ -55,7 +55,7 @@ def create_sub_mask_annotation(sub_mask):
 
         segmentation = np.array(poly.exterior.coords).ravel().tolist()
         segmentations.append(segmentation)
-
+    
     return polygons, segmentations
 
 def create_category_annotation(category_dict):
