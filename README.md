@@ -11,3 +11,5 @@ Register the dataset to detectron2, following the [detectron2 custom dataset tut
 
 | ![Original](./dataset/train/monge_12.jpg) | ![Mask](./dataset/train_mask/monge_12.png)|![COCO](./output/README_media/coco.png) |
 |:---:|:---:|:---:|
+
+Dataset_crop2 https://github.com/gpdas/cwfid_dataset
